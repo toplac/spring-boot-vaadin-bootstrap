@@ -1,7 +1,0 @@
-rootProject.name = 'spring-vaadin-bootstrap'
-
-include 'net.knacht.application'
-include 'net.knacht.application.model'
-include 'net.knacht.application.service'
-include 'net.knacht.application.ui.vaadin'
-

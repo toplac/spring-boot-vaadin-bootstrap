@@ -1,6 +1,0 @@
-// List all of your modules here, in order to be picked up by spring-boot
-dependencies {
-    compile project (':net.knacht.application.model')
-    compile project (':net.knacht.application.service')
-    compile project (':net.knacht.application.ui.vaadin')
-}

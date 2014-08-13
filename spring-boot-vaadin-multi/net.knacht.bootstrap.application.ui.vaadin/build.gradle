@@ -1,6 +1,6 @@
 dependencies {
 
-	// Vaadin
+    // Vaadin
     compile 'com.vaadin:vaadin-client-compiled:7.2.+'
     compile 'com.vaadin:vaadin-client:7.2.+'
     compile 'com.vaadin:vaadin-themes:7.2.+'
@@ -10,5 +10,5 @@ dependencies {
     // vaadin4spring
     compile 'org.vaadin.spring:spring-boot-vaadin:0.0.2-SNAPSHOT'
     
-    compile project (':net.knacht.application.service')
+    compile project (':net.knacht.bootstrap.application.service')
 }

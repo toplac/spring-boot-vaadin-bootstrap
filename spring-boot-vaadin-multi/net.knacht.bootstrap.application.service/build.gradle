@@ -1,0 +1,3 @@
+dependencies {
+    compile project(':net.knacht.bootstrap.application.model')
+}

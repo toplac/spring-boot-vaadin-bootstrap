@@ -3,12 +3,14 @@ buildscript {
     repositories { 
     
         jcenter()
-        
+   
         // To use mavenCentral uncomment the following line
         // mavenCentral()
     }
     dependencies {
+    
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.5.RELEASE")
+        
     }
 }
 
@@ -27,8 +29,8 @@ allprojects {
         // mavenCentral()
         
         // vaadin4spring
-        
         maven {
+        
         	url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
     }
