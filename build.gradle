@@ -1,3 +1,58 @@
+// Enable spring boot plugin
+buildscript {
+    repositories {
+	jcenter()
+	//To use mavenCentral uncomment the following line
+        //mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.5.RELEASE")
+    }
+}
+
+// Settings for all modules
+allprojects {
+
+    group = 'com.example'
+
+    version = '0.0.1'
+
+    repositories() {
+	jcenter()
+        //To use mavenCentral uncomment the following line
+        //mavenCentral()
+    }
+}
+
+/ Settings for all submodules
+subprojects {
+
+    apply plugin: 'idea'
+
+    apply plugin: 'eclipse'
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+    targetCompatibility = 1.8
+
+
+    dependencies {
+
+        // Spring Boot
+        compile("org.springframework.boot:spring-boot-starter-web:1.1.+")
+
+        // Vaadin
+        compile "com.vaadin:vaadin-client-compiled:7.2.+"
+        compile "com.vaadin:vaadin-client:7.2.+"
+        compile "com.vaadin:vaadin-themes:7.2.+"
+        compile "com.vaadin:vaadin-push:7.2.+"
+        compile "com.vaadin:vaadin-server:7.2.+"
+		
+    }
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.0'
 }
