@@ -24,7 +24,7 @@ allprojects {
     }
 }
 
-/ Settings for all submodules
+// Settings for all submodules
 subprojects {
 
     apply plugin: 'idea'
@@ -36,7 +36,6 @@ subprojects {
     sourceCompatibility = 1.8
 
     targetCompatibility = 1.8
-
 
     dependencies {
 
