@@ -1,9 +1,11 @@
 // Enable spring boot plugin
 buildscript {
-    repositories {
-	jcenter()
-	//To use mavenCentral uncomment the following line
-        //mavenCentral()
+    repositories { 
+    
+        jcenter()
+        
+        // To use mavenCentral uncomment the following line
+        // mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.5.RELEASE")
@@ -13,14 +15,22 @@ buildscript {
 // Settings for all modules
 allprojects {
 
-    group = 'com.example'
+    group = 'net.knacht'
 
     version = '0.0.1'
 
     repositories() {
-	jcenter()
-        //To use mavenCentral uncomment the following line
-        //mavenCentral()
+    
+        jcenter()
+        
+        // To use mavenCentral uncomment the following line
+        // mavenCentral()
+        
+        // vaadin4spring
+        
+        maven {
+        	url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 }
 
@@ -33,6 +43,8 @@ subprojects {
 
     apply plugin: 'java'
 
+    apply plugin: 'spring-boot'
+
     sourceCompatibility = 1.8
 
     targetCompatibility = 1.8
@@ -41,17 +53,11 @@ subprojects {
 
         // Spring Boot
         compile("org.springframework.boot:spring-boot-starter-web:1.1.+")
-
-        // Vaadin
-        compile "com.vaadin:vaadin-client-compiled:7.2.+"
-        compile "com.vaadin:vaadin-client:7.2.+"
-        compile "com.vaadin:vaadin-themes:7.2.+"
-        compile "com.vaadin:vaadin-push:7.2.+"
-        compile "com.vaadin:vaadin-server:7.2.+"
-		
+        
     }
 }
 
 task wrapper(type: Wrapper) {
+
     gradleVersion = '2.0'
 }
