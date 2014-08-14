@@ -38,6 +38,7 @@ public class ExampleUI extends UI {
 		navigator.addProvider(viewProvider);
 
 		setNavigator(navigator);
+		
 		navigator.navigateTo("main");
 	}
 
