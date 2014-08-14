@@ -37,7 +37,7 @@ public class ExampleService implements IExampleService {
 
 		Person person = new Person();
 		person.setId(1);
-		person.setName("Han Solo");
+		person.setName("Luke Skywalker");
 
 		result.add(person);
 
