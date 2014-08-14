@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package net.knacht.application.ui.vaadin.views;
+package net.knacht.bootstrap.application.ui.vaadin.views;
 
 import java.util.List;
 
-import net.knacht.application.model.Person;
-import net.knacht.application.service.api.IExampleService;
-import net.knacht.application.ui.vaadin.ui.ExampleUI;
+import net.knacht.bootstrap.application.model.Person;
+import net.knacht.bootstrap.application.service.api.IExampleService;
+import net.knacht.bootstrap.application.ui.vaadin.ui.ExampleUI;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;

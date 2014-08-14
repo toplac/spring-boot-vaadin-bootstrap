@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package net.knacht.application;
+package net.knacht.bootstrap.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

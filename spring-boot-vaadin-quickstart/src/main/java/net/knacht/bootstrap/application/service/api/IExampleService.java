@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package net.knacht.application.service.api;
+package net.knacht.bootstrap.application.service.api;
 
 import java.util.List;
 
-import net.knacht.application.model.Person;
+import net.knacht.bootstrap.application.model.Person;
 
 /**
  * @author Tobias Placht (dev@knacht.net)

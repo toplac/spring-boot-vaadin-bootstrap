@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package net.knacht.application.ui.vaadin.ui;
+package net.knacht.bootstrap.application.ui.vaadin.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.vaadin.spring.VaadinUI;

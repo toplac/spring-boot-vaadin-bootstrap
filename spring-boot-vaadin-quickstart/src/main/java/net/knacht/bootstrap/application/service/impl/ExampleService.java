@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package net.knacht.application.service.impl;
+package net.knacht.bootstrap.application.service.impl;
 
-import net.knacht.application.model.Person;
-import net.knacht.application.service.api.IExampleService;
+import net.knacht.bootstrap.application.model.Person;
+import net.knacht.bootstrap.application.service.api.IExampleService;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayList;

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package net.knacht.application.model;
+package net.knacht.bootstrap.application.model;
 
 /**
  * @author Tobias Placht (dev@knacht.net)
