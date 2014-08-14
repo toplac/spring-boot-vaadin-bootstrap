@@ -4,6 +4,8 @@ spring-boot-vaadin-bootstrap
 Contains several example projects to bootstrap a Vaadin application using [gradle](https://github.com/gradle/gradle),
 [spring-boot](https://github.com/spring-projects/spring-boot) and [vaadin4spring](https://github.com/peholmst/vaadin4spring)
 
+The projects are missing several features like unit-test, logging and custom Vaadin-Themes. I plan to add them soon. 
+
 ## Available modules
 
 * spring-boot-vaadin-multi - contains a multi-module gradle project
