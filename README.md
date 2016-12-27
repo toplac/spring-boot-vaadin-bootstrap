@@ -1,6 +1,10 @@
 spring-boot-vaadin-bootstrap
 =======================
 
+# Not maintained anymore
+
+Head over to http://start.spring.io/
+
 Contains several example projects to bootstrap a Vaadin application using [gradle](https://github.com/gradle/gradle),
 [spring-boot](https://github.com/spring-projects/spring-boot) and [vaadin4spring](https://github.com/peholmst/vaadin4spring)
 
