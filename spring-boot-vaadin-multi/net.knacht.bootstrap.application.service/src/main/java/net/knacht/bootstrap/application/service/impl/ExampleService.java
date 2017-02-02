@@ -14,14 +14,13 @@
 
 package net.knacht.bootstrap.application.service.impl;
 
-import net.knacht.bootstrap.application.model.Person;
-import net.knacht.bootstrap.application.service.api.IExampleService;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
+
+import net.knacht.bootstrap.application.model.Person;
+import net.knacht.bootstrap.application.service.api.IExampleService;
 
 /**
  * @author Tobias Placht (dev@knacht.net)
@@ -53,6 +52,6 @@ public class ExampleService implements IExampleService {
 
 	@Override
 	public Person findByName(String name) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException("Not implemented");
 	}
 }

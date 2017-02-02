@@ -15,7 +15,7 @@
 package net.knacht.bootstrap.application.ui.vaadin;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.vaadin.spring.VaadinUI;
+import org.vaadin.spring.annotation.VaadinUI;
 import org.vaadin.spring.navigator.SpringViewProvider;
 
 import com.vaadin.annotations.Title;
