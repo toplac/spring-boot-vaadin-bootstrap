@@ -16,18 +16,18 @@ package net.knacht.bootstrap.application.ui.vaadin.views;
 
 import java.util.List;
 
-import net.knacht.bootstrap.application.model.Person;
-import net.knacht.bootstrap.application.service.api.IExampleService;
-import net.knacht.bootstrap.application.ui.vaadin.ExampleUI;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
-import org.vaadin.spring.navigator.VaadinView;
+import org.vaadin.spring.navigator.annotation.VaadinView;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
+
+import net.knacht.bootstrap.application.model.Person;
+import net.knacht.bootstrap.application.service.api.IExampleService;
+import net.knacht.bootstrap.application.ui.vaadin.ExampleUI;
 
 @Scope("prototype")
 @VaadinView(name = "main", ui = ExampleUI.class)

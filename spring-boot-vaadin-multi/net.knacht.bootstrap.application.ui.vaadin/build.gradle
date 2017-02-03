@@ -1,14 +1,14 @@
 dependencies {
-
+    def vaadinVersion = '7.7.6'
     // Vaadin
-    compile 'com.vaadin:vaadin-client-compiled:7.2.+'
-    compile 'com.vaadin:vaadin-client:7.2.+'
-    compile 'com.vaadin:vaadin-themes:7.2.+'
-    compile 'com.vaadin:vaadin-push:7.2.+'
-    compile 'com.vaadin:vaadin-server:7.2.+'
+    compile "com.vaadin:vaadin-client-compiled:$vaadinVersion"
+    compile "com.vaadin:vaadin-client:$vaadinVersion"
+    compile "com.vaadin:vaadin-themes:$vaadinVersion"
+    compile "com.vaadin:vaadin-push:$vaadinVersion"
+    compile "com.vaadin:vaadin-server:$vaadinVersion"
         
     // vaadin4spring
-    compile 'org.vaadin.spring:spring-boot-vaadin:0.0.2-SNAPSHOT'
+    compile 'org.vaadin.spring:spring-boot-vaadin:0.0.5.RELEASE'
     
     compile project (':net.knacht.bootstrap.application.service')
 }

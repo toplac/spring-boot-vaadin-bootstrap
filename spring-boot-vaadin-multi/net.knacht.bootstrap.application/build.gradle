@@ -1,3 +1,9 @@
+apply plugin: 'spring-boot'
+
+springBoot {
+    mainClass = "net.knacht.bootstrap.application.Application"
+}
+
 // List all of your modules here, in order to be picked up by spring-boot
 dependencies {
     compile project (':net.knacht.bootstrap.application.model')

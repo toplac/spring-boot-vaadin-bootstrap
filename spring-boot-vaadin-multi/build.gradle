@@ -9,7 +9,8 @@ buildscript {
     }
     dependencies {
     
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.5.RELEASE")
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE'
+        classpath 'io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE'
         
     }
 }
@@ -20,6 +21,14 @@ allprojects {
     group = 'net.knacht'
 
     version = '0.0.1'
+
+    apply plugin: "io.spring.dependency-management"
+
+    dependencyManagement {
+        imports {
+            mavenBom 'org.springframework.boot:spring-boot-starter-parent:1.5.1.RELEASE'
+        }
+    }
 
     repositories() {
     
@@ -45,8 +54,6 @@ subprojects {
 
     apply plugin: 'java'
 
-    apply plugin: 'spring-boot'
-
     sourceCompatibility = 1.8
 
     targetCompatibility = 1.8
@@ -54,12 +61,12 @@ subprojects {
     dependencies {
 
         // Spring Boot
-        compile("org.springframework.boot:spring-boot-starter-web:1.1.+")
+        compile 'org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE'
         
     }
 }
 
 task wrapper(type: Wrapper) {
 
-    gradleVersion = '2.0'
+    gradleVersion = '3.3'
 }
